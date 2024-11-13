@@ -4,9 +4,7 @@ def solution(price, money, count):
     totalCharge = 0
 
     for i in range(1, count + 1) :
-        totalCharge += price * i
-
-    print(totalCharge)
+        totalCharge += price * i    
 
     answer = 0 if money - totalCharge >= 0 else totalCharge - money
 
